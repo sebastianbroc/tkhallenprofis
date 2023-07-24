@@ -41,6 +41,8 @@ p {
     padding-left: 2rem;
     display: flex;
     gap: 5%;
+    opacity: 100%;
+    transition: 0.2 ease;
 }
 
 .header img {
@@ -310,9 +312,10 @@ p {
     background-size: cover;
     background-position: center;
     padding: 2rem;
+    display: none;
 }
 
-.content_services h1 {
+.content_services h1, .content_services p {
     color: white;
 }
 
@@ -323,14 +326,15 @@ p {
 }
 
 .content_services .service {
-    background: white;
+    background: rgba(255,255,255,0.2);
     padding: 10px;
     border-radius: 5px;
 }
 
-.content_services h2 {
+.content_services .service h2 {
     font-family: 'grifterbold';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: white;
 }
 
 .footer {
@@ -347,10 +351,22 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+    .content_services{
+      display: inherit;
+    }
+
+    .services {
+      display: none;
+    }
+
     .header {
         justify-content: space-between;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .header.open img {
+      opacity: 0;
     }
 
     .header img {
@@ -432,4 +448,34 @@ p {
         font-family: 'grifterbold';
         font-size: 0.9rem;
     }
+}
+
+
+
+/*ABOUT PAGE*/
+
+.about img {
+  width: 40vw;
+}
+
+.about .content_card {
+  display: flex;
+  gap: 50px;
+}
+
+.about .image h3 {
+  font-family: 'grifterbold';
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about img {
+    width: 80vw;
+  }
+
+
+  .about .content_card {
+    flex-direction: column;
+  }
 }
