@@ -42,7 +42,7 @@ p {
     display: flex;
     gap: 5%;
     opacity: 100%;
-    transition: 0.2 ease;
+    transition: 0.2s ease;
 }
 
 .header img {
@@ -307,6 +307,35 @@ p {
     max-width: 70%;
 }
 
+.dev {
+  background: #353535;
+  color: white;
+  border-radius: 5px;
+  max-width: 500px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.platform_links {
+  background: white;
+  border-radius: 5px;
+  padding: 2px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.platform_links a {
+  height: 40px;
+}
+
+.platform_links img {
+  width: 40px;
+  height: 40px;
+}
+
 .content_services {
     background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/services.jpg);
     background-size: cover;
@@ -365,10 +394,6 @@ p {
         padding-right: 5%;
     }
 
-    .header.open img {
-      opacity: 0;
-    }
-
     .header img {
         height: 40px;
     }
@@ -407,7 +432,7 @@ p {
       z-index: -1;
       background: transparent;
       border-radius: 50%;
-      transition: 0.2 ease;
+      transition: 0.2s ease;
     }
 
     .roll.open {
@@ -422,7 +447,7 @@ p {
       position: absolute;
       right: 20px;
       top: 48px;
-      transition: 0.2 ease;
+      transition: 0.2s ease;
     }
 
     .boden.open {
@@ -477,5 +502,81 @@ p {
 
   .about .content_card {
     flex-direction: column;
+  }
+}
+
+/*REFERENZEN PAGE*/
+
+.referenzen .content_card {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url(assets/boden_clean.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.referenzen .content_card .text {
+  margin-bottom: 100px;
+}
+
+.referenzen .content_card .ref_list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.referenzen .content_card .ref_list .ref .quotation {
+  font-size: 10rem;
+  height: 70px;
+  line-height: 100%;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.referenzen .content_card .ref_list .ref .spacer {
+  grid-row-start: 3;
+  height: 20px;
+}
+
+.referenzen .content_card .ref_list .ref {
+  background: rgba(255,255,255,0.7);
+  border-radius: 5px;
+  display: grid;
+  padding: 20px;
+}
+
+.referenzen .content_card .ref_list .ref .img_container {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.referenzen .content_card .ref_list .ref .ref_text {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.referenzen .content_card .ref_list .ref .ref_text h2 {
+  font-family: "grifterbold";
+  color: var(--primary-color);
+}
+
+.referenzen .content_card .ref_list .ref .ref_text p {
+  max-width: 90%;
+}
+.referenzen .content_card .ref_list .ref .ref_text a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.referenzen .content_card .ref_list .ref .ref_text p b {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 430px) {
+  .referenzen .content_card .ref_list .ref .img_container {
+    display: none;
   }
 }
