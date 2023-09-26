@@ -9,11 +9,13 @@
 @font-face {
     font-family: grifterbold;
     src: url(assets/grifterbold.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: PT Sans;
     src: url(assets/PTSans.ttf);
+    font-display: swap;
 }
 
 * {
@@ -118,7 +120,7 @@ p {
 } 
 
 .title_text {
-    background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/halle_bg.jpg);
+    background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/halle_bg-min.webp);
     background-size: cover;
     background-position: center;
     padding: 1rem;
@@ -338,7 +340,7 @@ p {
 }
 
 .content_services {
-    background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/services.jpg);
+    background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/services.webp);
     background-size: cover;
     background-position: center;
     padding: 2rem;

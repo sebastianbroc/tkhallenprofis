@@ -30,7 +30,7 @@
 
 
 .services {
-  background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/services.jpg);
+  background: linear-gradient(0deg, rgba(6, 33, 88, 0.7), rgba(6, 33, 88, 1)), url(assets/services.webp);
   background-size: cover;
   background-position: center;
 }
