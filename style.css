@@ -46,6 +46,9 @@ p {
     gap: 5%;
     opacity: 100%;
     transition: 0.2s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header img {
@@ -390,10 +393,6 @@ p {
       display: inherit;
     }
 
-    .services {
-      display: none;
-    }
-
     .header {
         justify-content: space-between;
         padding-left: 5%;
@@ -589,7 +588,7 @@ p {
 
 /*UNDER CONSTRUCTION PAGE*/
 .under_construction {
-  background: url(assets/logistik.jpg);
+  background: url(assets/logistik.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -657,3 +656,73 @@ p {
 .contact_card h1 {
   margin-top: 10px;
 }
+
+/* SERVICES PAGE */
+.content.services {
+  overflow: hidden;
+}
+
+.services_wrapper {
+  padding: 100px 4rem 100px 4rem;
+  transform: rotate(-2deg) translateX(-20px);
+  width: 110%;
+}
+
+.service .text p {
+  max-width: 70%;
+}
+
+.services_wrapper h2 {
+  font-family: 'grifterbold';
+  font-size: 3rem;
+}
+
+.services_wrapper.blue1 {
+  background: var(--primary-color);
+  color: white;
+}
+
+.services_wrapper.blue2 {
+  background: var(--tertiary-color);
+  color: white;
+}
+
+.services_wrapper.white {
+  background: white;
+  color: var(--primary-color);
+}
+
+.services_wrapper .service {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 80%;
+}
+
+.services_wrapper .service img {
+  width: 40%;
+  /*transform: rotate(-5deg);*/
+}
+
+@media only screen and (max-width: 600px) {
+  .services_wrapper h2 {
+   font-size: 1.8rem;
+  }
+
+  .service .text p {
+    max-width: none;
+  }
+ 
+  .services_wrapper .service {
+   flex-direction: column;
+   width: 60%;
+  }
+
+  .services_wrapper .service img {
+    width: 100%;
+    transform: none !important;
+  }
+ }
