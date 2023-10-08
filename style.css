@@ -298,7 +298,10 @@ p {
     }
 }
 
-
+.content {
+  min-height: calc(100vh - 80px);
+  background: white;
+}
 
 .content_card {
     background: white;
@@ -307,7 +310,7 @@ p {
 }
 
 .content_card p {
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .dev {
@@ -481,7 +484,6 @@ p {
 
 
 /*ABOUT PAGE*/
-
 .about img {
   width: 40vw;
 }
@@ -489,6 +491,7 @@ p {
 .about .content_card {
   display: flex;
   gap: 50px;
+  background: none;
 }
 
 .about .image h3 {
