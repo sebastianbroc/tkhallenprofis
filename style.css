@@ -316,6 +316,48 @@ p {
     max-width: 60%;
 }
 
+.club_content {
+  /*transform: rotate(-2deg);*/
+  max-width: 800px;
+}
+
+.clubs {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*grid-row-gap: 60px;*/
+  grid-column-gap: 20px;
+}
+
+@media only screen and (max-width: 600px){
+.clubs {
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+
+.club {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 150px;
+}
+
+
+.club h3 {
+  text-align: center;
+  font-size: 1rem;
+  display: none;
+}
+
+.clubs img {
+  max-width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
 .dev {
   background: #353535;
   color: white;
