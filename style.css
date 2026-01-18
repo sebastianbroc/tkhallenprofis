@@ -428,6 +428,7 @@ p, ul li {
     justify-content: center;
     gap: 40px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer a {
