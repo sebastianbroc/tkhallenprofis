@@ -33,7 +33,7 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
-p {
+p, ul li {
     font-family: 'PT Sans';
     font-size: 1.2rem;
 }
@@ -369,6 +369,10 @@ p {
   gap: 10px;
 }
 
+.dev p {
+  margin: 0;
+}
+
 .platform_links {
   background: white;
   border-radius: 5px;
@@ -422,6 +426,7 @@ p {
     height: 100px;
     display: flex;
     justify-content: center;
+    gap: 40px;
     align-items: center;
 }
 
@@ -852,4 +857,10 @@ p {
   .impressions .services_wrapper {
     padding-left: 2.5rem;
   }
+}
+
+/* DATENSCHUTZ */
+
+.content_card.privacy_policy h1, h2, h3, p {
+  margin: 20px 0 20px 0;
 }
