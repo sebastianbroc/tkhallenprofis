@@ -474,11 +474,16 @@ ul li {
     height: 0;
     width: 100%;
     overflow: hidden;
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    /* Ensure visibility over content */
+    z-index: 100;
   }
 
   .header .links a {
