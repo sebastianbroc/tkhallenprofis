@@ -180,23 +180,6 @@ ul li {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 600px) {
-  .header .container {
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .title_text .options .option {
-    font-size: 2.5rem;
-    position: absolute;
-    width: 90%;
-    left: 5%;
-  }
-}
 
 .title_text .options .option:nth-child(1) {
   animation-delay: 0s;
@@ -341,9 +324,6 @@ ul li {
   font-family: 'PT Sans';
 }
 
-.content_card p {
-  /* max-width: 60%; */
-}
 
 
 
@@ -464,6 +444,13 @@ ul li {
 }
 
 @media only screen and (max-width: 600px) {
+  .title_text .options .option {
+    font-size: 2.5rem;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+  }
+
   .content_services {
     display: inherit;
   }
@@ -472,6 +459,11 @@ ul li {
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
+    align-items: center;
+  }
+
+  .burger {
+    display: block;
   }
 
   .header img {
@@ -639,10 +631,12 @@ ul li {
   .about .content_card {
     transform: rotate(0deg);
     margin-left: 0;
+    padding: 0;
   }
 
   .about .inner_content {
     flex-direction: column;
+    align-items: center;
   }
 
   .about .content_card h1 {
