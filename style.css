@@ -460,6 +460,10 @@ ul li {
     padding-left: 5%;
     padding-right: 5%;
     align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
   }
 
   .burger {
