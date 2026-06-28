@@ -68,6 +68,21 @@
     
                     Ob Bundesliga-, Champions-League- oder Länderspiele: wir kümmern uns um Sportbodenverlegung, Tribünenaufbau oder die komplette Logistik.<br><br>Auch zeitlich knapp bemessene Planungen, spontane Projekte und mehrere Partien in kurzen zeitlichen Rahmen sind für uns kein Problem. Als Kunden erhalten Sie Top-Service und faire Angebote.</p>
             </div>
+        </div>
+
+        <div id="floor-roll-card" class="blue1-full-bleed floor-roll-container">
+            <div class="floor-roller"></div>
+            <div class="container">
+                <div class="content_card blue1-content">
+                    <h1 style="max-width: 650px; color: white;">Boden ist nicht gleich Boden - Unser Qualitätsanspruch</h1>
+                    <p style="max-width: 650px;">Um einen Handballboden so zu verlegen, dass er gleichmäßig plan aufliegt und keine störenden Kanten an den Übergängen der einzelnen Elemente aufweist, benötigt man viel Erfahrung, die richtige Technik und echtes Expertenwissen. Dies fängt bereits bei der Lagerung an.<br><br>Genau dieses Qualitätsversprechen und Know-how bieten wir unseren Kunden. Für ein erstklassiges und sicheres Spielerlebnis bei jedem Spiel.</p>
+                    <br>
+                    <a href="services.html" style="display: inline-block; padding: 15px 30px; background-color: var(--tertiary-color); color: white; text-decoration: none; font-family: 'grifterbold'; border-radius: 5px; margin-top: 10px; display: flex; justify-content: center; align-items: center; width: fit-content;">UNSERE LEISTUNGEN</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
             <div class="content_card club_content">
                 <h1>Kundenauszug</h1><br>
                 <div class="clubs">
@@ -126,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="services">
+        <div class="services" style="display: none;">
             <div class="rotatingGallery-parentContainer">
                     <div class="rotatingGallery">
                       <div class="rotatingGallery-slides">
@@ -184,4 +199,15 @@
     </footer>
     </body>
     <script src="menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const card = document.getElementById("floor-roll-card");
+            if (card) {
+                if (!sessionStorage.getItem("floor_rolled_out")) {
+                    card.classList.add("animate-roll");
+                    sessionStorage.setItem("floor_rolled_out", "true");
+                }
+            }
+        });
+    </script>
 </html>
