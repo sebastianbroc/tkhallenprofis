@@ -946,12 +946,21 @@ ul li {
   max-width: 80%;
 }
 
+.services_wrapper .service.reverse {
+  flex-direction: row-reverse;
+}
+
 .services_wrapper.vermietung .service {
   max-width: unset;
 }
 
 .services_wrapper .service img {
   width: 40%;
+}
+
+.led-technical-details td {
+  padding-right: 10px;
+  vertical-align: top;
 }
 
 @media only screen and (max-width: 600px) {
@@ -966,6 +975,10 @@ ul li {
   .services_wrapper .service {
     flex-direction: column;
     width: 60%;
+  }
+
+  .services_wrapper .service.reverse {
+    flex-direction: column;
   }
 
   .services_wrapper.vermietung .service {
