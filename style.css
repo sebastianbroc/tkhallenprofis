@@ -412,7 +412,7 @@ ul li {
 
 .content_card {
   background: white;
-  padding: 2rem;
+  padding: 2rem 2rem 0 0;
   font-family: 'PT Sans';
 }
 
